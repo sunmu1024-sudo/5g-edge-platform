@@ -1,0 +1,46 @@
+﻿/* 自定义字体和图标样式 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 传感器图标样式 */
+.icon-temperature::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\\f2c9';
+}
+
+.icon-humidity::before {
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 900;
+    content: '\\f743';
+}
+
+.icon-light::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\\f185';
+}
+
+.icon-pressure::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\\f6e1';
+}
+
+/* 加载动画 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    border: 3px solid var(--bg-secondary);
+    border-top: 3px solid var(--primary-blue);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}

@@ -1,0 +1,41 @@
+﻿/* 响应式设计 */
+@media (max-width: 1200px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .stats-grid,
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart {
+        height: 300px;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .chart-container {
+        padding: 1rem;
+    }
+    
+    .data-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
